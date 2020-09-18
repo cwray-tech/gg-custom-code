@@ -1,9 +1,11 @@
-//Grab the list of trees
+//Grab the list of trees.
 const list = document.querySelector('#search-list');
-// Filter trees
+// Grab the search bar.
 const searchBar = document.forms['search'].querySelector('#search-input');
-searchBar.addEventListener('keyup', function (e) {
-  const term = e.target.value.toLowerCase();
+
+// Filter trees
+searchBar.addEventListener('keyup', function (event) {
+  const term = event.target.value.toLowerCase();
   const trees = list.getElementsByClassName('tree-link w-dyn-item');
   Array.from(trees).forEach(function (tree) {
     const treeName = tree.firstElementChild.textContent;
@@ -14,4 +16,4 @@ searchBar.addEventListener('keyup', function (e) {
       tree.style.display = 'none';
     }
   })
-})
+});
