@@ -7,6 +7,7 @@ const searchBar = document.forms['search'].querySelector('#search-input');
 searchBar.addEventListener('keyup', function (event) {
   const term = event.target.value.toLowerCase();
   const trees = list.getElementsByClassName('tree-link w-dyn-item');
+  
   Array.from(trees).forEach(function (tree) {
     const treeName = tree.firstElementChild.textContent;
     if (treeName.toLowerCase().indexOf(term) != -1) {
