@@ -1,5 +1,5 @@
 const search = instantsearch({
-  indexName: 'plants',
+  indexName: 'trees',
   searchClient: algoliasearch('AAVKO2PL57', '9f8d6abc778effec3a2a465a5bc2218f'),
   routing: true
 });
