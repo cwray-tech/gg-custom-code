@@ -21,6 +21,9 @@
   padding-top: 10px;
   padding-bottom: 10px;
 }
+.ais-RefinementList-label {
+  gap: 10px;
+}
 
 .ais-Pagination {
   margin-top: 1em;
