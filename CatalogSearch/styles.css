@@ -21,8 +21,11 @@
   padding-top: 10px;
   padding-bottom: 10px;
 }
+
 .ais-RefinementList-label {
-  gap: 10px;
+  gap: 5px;
+  display: flex;
+  align-items: center;
 }
 
 .ais-Pagination {
