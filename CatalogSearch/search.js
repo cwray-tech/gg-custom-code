@@ -101,7 +101,7 @@ search.addWidget(
     container: '#hits',
     templates: {
       item: `
-    <a href="{{Url}}" class="item-container w-inline-block">
+    <a href="/catalog/{{Slug}}" class="item-container w-inline-block">
         <div class="preview-image-container"><img src="{{Small image}}" onerror="this.style.display='none'" alt="{{Common Name}}" class="preview-image">
             <div class="feature-div">
                 <div>{{Features}}</div>
